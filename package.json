@@ -1,0 +1,36 @@
+{
+  "name": "abl-constants",
+  "title": "ABL - constants",
+  "description": "constants",
+  "version": "0.0.1",
+  "homepage": "http://adventurebucketlist.com/",
+  "keywords": [],
+  "author": {
+    "name": "TrejGun",
+    "email": "TrejGun@gmail.com",
+    "url": "http://mabp.kiev.ua/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TrejGun/constants.git"
+  },
+  "dependencies": {
+    "moment": "2.11.1",
+    "moment-range": "2.1.0",
+    "moment-timezone": "0.5.0"
+  },
+  "devDependencies": {
+    "babel-core": "6.4.0",
+    "babel-cli": "6.4.0",
+    "babel-preset-es2015": "6.3.13",
+    "eslint": "1.10.3",
+    "eslint-config-trejgun": "git://github.com/TrejGun/eslint-config-trejgun.git#6beca5e7537dac1a70d155796f73df2555792495"
+  },
+  "engines": {
+    "node": "v5.3"
+  },
+  "scripts": {
+    "build": "rm -rf build && babel -d ./build ./source",
+    "lint": "eslint source/*"
+  }
+}
