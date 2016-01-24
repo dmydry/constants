@@ -1,8 +1,9 @@
 {
   "name": "abl-constants",
+  "version": "0.0.1",
+  "license": "MIT",
   "title": "ABL - constants",
   "description": "constants",
-  "version": "0.0.1",
   "homepage": "http://adventurebucketlist.com/",
   "keywords": [],
   "author": {
