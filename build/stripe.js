@@ -1,5 +1,7 @@
 "use strict";
 
+// https://stripe.com/docs/testing
+
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });

@@ -1,5 +1,7 @@
 "use strict";
 
+// https://www.twilio.com/docs/api/rest/test-credentials
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
