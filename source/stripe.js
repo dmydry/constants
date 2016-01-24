@@ -1,5 +1,7 @@
 "use strict";
 
+// https://stripe.com/docs/testing
+
 export const chargeId = "ch_000000";
 export const tokenId = "tok_000000";
 
