@@ -12,7 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TrejGun/constants.git"
+    "url": "https://github.com/bucket-list/constants.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bucket-list/constants/issues"
   },
   "dependencies": {
     "moment": "2.11.1",
