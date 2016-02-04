@@ -15,22 +15,27 @@ export const maxOcc = 10;
 export const chargeNames = {
 	tax: "VAT",
 	fee: "FLEE",
-	addon: "Snack"
+	addon: {
+		food: "Hamburger",
+		drink: "Coka-Cola"
+	},
+	aap: {
+		adult: "Adult",
+		youth: "Youth",
+		child: "Child"
+	}
 };
 
-export const aapTypes = {
-	adult: "Adult",
-	youth: "Youth",
-	child: "Child"
-};
-
-export const aapPrices = {
-	adult: 200,
-	youth: 100,
-	child: 50
-};
-export const attendeesObj = {
-	[aapTypes.adult]: 1,
-	[aapTypes.youth]: 1,
-	[aapTypes.child]: 1
+export const chargeValues = {
+	tax: 10 * 100,
+	fee: 10 * 100,
+	addon: {
+		food: 10 * 100,
+		drink: 5 * 100
+	},
+	aap: {
+		adult: 300 * 100,
+		youth: 200 * 100,
+		child: 100 * 100
+	}
 };

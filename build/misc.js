@@ -1,13 +1,8 @@
 "use strict";
 
-var _attendeesObj;
-
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 var title = exports.title = "My activity Title";
 var description = exports.description = new Array(40).join("long ") + "description";
 var notes = exports.notes = new Array(40).join("long ") + "notes";
@@ -22,18 +17,27 @@ var maxOcc = exports.maxOcc = 10;
 var chargeNames = exports.chargeNames = {
 	tax: "VAT",
 	fee: "FLEE",
-	addon: "Snack"
+	addon: {
+		food: "Hamburger",
+		drink: "Coka-Cola"
+	},
+	aap: {
+		adult: "Adult",
+		youth: "Youth",
+		child: "Child"
+	}
 };
 
-var aapTypes = exports.aapTypes = {
-	adult: "Adult",
-	youth: "Youth",
-	child: "Child"
+var chargeValues = exports.chargeValues = {
+	tax: 10 * 100,
+	fee: 10 * 100,
+	addon: {
+		food: 10 * 100,
+		drink: 5 * 100
+	},
+	aap: {
+		adult: 300 * 100,
+		youth: 200 * 100,
+		child: 100 * 100
+	}
 };
-
-var aapPrices = exports.aapPrices = {
-	adult: 200,
-	youth: 100,
-	child: 50
-};
-var attendeesObj = exports.attendeesObj = (_attendeesObj = {}, _defineProperty(_attendeesObj, aapTypes.adult, 1), _defineProperty(_attendeesObj, aapTypes.youth, 1), _defineProperty(_attendeesObj, aapTypes.child, 1), _attendeesObj);
