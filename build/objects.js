@@ -13,6 +13,7 @@ exports.chargeActivityArray = chargeActivityArray;
 exports.eventObject = eventObject;
 exports.guideObject = guideObject;
 exports.locationObject = locationObject;
+exports.operatorObject = operatorObject;
 exports.timeslotObject = timeslotObject;
 exports.userObject = userObject;
 exports.transactionObject = transactionObject;
@@ -158,6 +159,30 @@ function locationObject(data) {
 		location: {
 			type: "Point",
 			coordinates: [Math.random(), Math.random()]
+		}
+	}, data);
+}
+
+function operatorObject(data) {
+	return Object.assign({
+		password: _misc.password,
+		confirm: _misc.confirm,
+		fullName: "Full Operator Name",
+		companyName: "Company name",
+		domainName: "domain.com",
+		phoneNumber: _twilio.phoneNumber,
+		email: (0, _utils.getRandomString)().toLowerCase() + "@gmail.com",
+		location: locationObject(),
+		role: "operator",
+		preferences: {
+			features: {
+				guides: true,
+				questions: true
+			},
+			customFields: {
+				notes: "Notes",
+				prior: 30
+			}
 		}
 	}, data);
 }

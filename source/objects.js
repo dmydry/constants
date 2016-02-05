@@ -136,6 +136,30 @@ export function locationObject(data) {
 	}, data);
 }
 
+export function operatorObject(data) {
+	return Object.assign({
+		password,
+		confirm,
+		fullName: "Full Operator Name",
+		companyName: "Company name",
+		domainName: "domain.com",
+		phoneNumber,
+		email: getRandomString().toLowerCase() + "@gmail.com",
+		location: locationObject(),
+		role: "operator",
+		preferences: {
+			features: {
+				guides: true,
+				questions: true
+			},
+			customFields: {
+				notes: "Notes",
+				prior: 30
+			}
+		}
+	}, data);
+}
+
 export function timeslotObject(data) {
 	return Object.assign({
 		title,
