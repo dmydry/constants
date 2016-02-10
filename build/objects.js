@@ -4,6 +4,7 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 exports.AAPObject = undefined;
+exports.affiliateObject = affiliateObject;
 exports.activityObject = activityObject;
 exports.bookingObject = bookingObject;
 exports.cardObject = cardObject;
@@ -41,6 +42,16 @@ var AAPObject = exports.AAPObject = [{
 }, {
 	name: _misc.chargeNames.aap.child
 }];
+
+function affiliateObject(data) {
+	return Object.assign({
+		password: _misc.password,
+		confirm: _misc.confirm,
+		companyName: "Company name",
+		domainName: "domain.com",
+		email: (0, _utils.getRandomString)().toLowerCase() + "@gmail.com"
+	}, data);
+}
 
 function activityObject(data) {
 	return Object.assign({
@@ -173,7 +184,6 @@ function operatorObject(data) {
 		phoneNumber: _twilio.phoneNumber,
 		email: (0, _utils.getRandomString)().toLowerCase() + "@gmail.com",
 		location: locationObject(),
-		role: "operator",
 		preferences: {
 			features: {
 				guides: true,

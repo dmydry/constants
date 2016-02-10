@@ -15,6 +15,16 @@ export const AAPObject = [{
 	name: chargeNames.aap.child
 }];
 
+export function affiliateObject(data) {
+	return Object.assign({
+		password,
+		confirm,
+		companyName: "Company name",
+		domainName: "domain.com",
+		email: getRandomString().toLowerCase() + "@gmail.com"
+	}, data);
+}
+
 export function activityObject(data) {
 	return Object.assign({
 		description,
@@ -146,7 +156,6 @@ export function operatorObject(data) {
 		phoneNumber,
 		email: getRandomString().toLowerCase() + "@gmail.com",
 		location: locationObject(),
-		role: "operator",
 		preferences: {
 			features: {
 				guides: true,
