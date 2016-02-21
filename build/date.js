@@ -5,17 +5,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.timeFormat = exports.dateFormat = exports.googleFormat = exports.ISO_8601 = exports.daysRunning = exports.untilDate = exports.endDate = exports.startDate = exports.testDate = exports.date = exports.timeZone = undefined;
 
-var _moment = require("moment");
+var _moment = require("./moment");
 
 var _moment2 = _interopRequireDefault(_moment);
 
-var _momentTimezone = require("moment-timezone");
-
-var _momentTimezone2 = _interopRequireDefault(_momentTimezone);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-// eslint-disable-line no-unused-vars
 
 var timeZone = exports.timeZone = "Europe/Zurich";
 var date = exports.date = new Date();

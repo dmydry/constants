@@ -1,7 +1,6 @@
 "use strict";
 
-import moment from "moment";
-import tz from "moment-timezone"; // eslint-disable-line no-unused-vars
+import moment from "./moment";
 
 export const timeZone = "Europe/Zurich";
 export const date = new Date();
