@@ -35,11 +35,10 @@
   },
   "scripts": {
     "postinstall": "babel -d ./build ./source",
-    "build": "rm -rf build && babel -d ./build ./source",
     "lint": "eslint source/*",
     "pull": "git checkout master && git pull origin master",
     "push": "git push origin master --tags && exit 0 && npm publish",
     "commit": "git commit -a -m ${1}",
-    "release": "npm run pull && npm version ${1:-patch} && npm run push"
+    "release": "release () { npm run pull && if [ -z $1 ]; then npm version patch; else npm version $1; fi && npm run push; }; release"
   }
 }
