@@ -72,44 +72,40 @@ export function customerObject(data) {
 	}, data);
 }
 
-export function chargeTimeslotArray(data) {
-	return Object.assign({
-		charges: [{
-			name: chargeNames.aap.adult,
-			type: "aap",
-			amount: chargeValues.aap.adult
-		}, {
-			name: chargeNames.aap.youth,
-			type: "aap",
-			amount: chargeValues.aap.youth
-		}, {
-			name: chargeNames.aap.child,
-			type: "aap",
-			amount: chargeValues.aap.child
-		}]
-	}, data);
+export function chargeTimeslotArray() {
+	return [{
+		name: chargeNames.aap.adult,
+		type: "aap",
+		amount: chargeValues.aap.adult
+	}, {
+		name: chargeNames.aap.youth,
+		type: "aap",
+		amount: chargeValues.aap.youth
+	}, {
+		name: chargeNames.aap.child,
+		type: "aap",
+		amount: chargeValues.aap.child
+	}];
 }
 
-export function chargeActivityArray(data) {
-	return Object.assign({
-		charges: [{
-			name: chargeNames.addon.food,
-			type: "addon",
-			amount: chargeValues.addon.food
-		}, {
-			name: chargeNames.addon.drink,
-			type: "addon",
-			amount: chargeValues.addon.drink
-		}, {
-			name: chargeNames.tax,
-			type: "tax",
-			amount: chargeValues.tax
-		}, {
-			name: chargeNames.fee,
-			type: "fee",
-			amount: chargeValues.fee
-		}]
-	}, data);
+export function chargeActivityArray() {
+	return [{
+		name: chargeNames.addon.food,
+		type: "addon",
+		amount: chargeValues.addon.food
+	}, {
+		name: chargeNames.addon.drink,
+		type: "addon",
+		amount: chargeValues.addon.drink
+	}, {
+		name: chargeNames.tax,
+		type: "tax",
+		amount: chargeValues.tax
+	}, {
+		name: chargeNames.fee,
+		type: "fee",
+		amount: chargeValues.fee
+	}];
 }
 
 export function eventObject(data) {
