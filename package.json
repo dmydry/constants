@@ -22,7 +22,7 @@
     "source"
   ],
   "dependencies": {
-    "moment-config-trejgun": "git://github.com/TrejGun/moment-config-trejgun.git#v0.0.3"
+    "moment-config-trejgun": "git://github.com/TrejGun/moment-config-trejgun.git#v0.0.4"
   },
   "devDependencies": {
     "babel-config-trejgun": "git://github.com/TrejGun/babel-config-trejgun.git#v0.0.3",
