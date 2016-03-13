@@ -1,8 +1,8 @@
 "use strict";
 
-import moment from "./moment";
+import moment from "moment-config-trejgun";
 
-export const timeZone = "Europe/Zurich";
+export const timeZone = "Pacific/Chatham"; // +12:45, the most fucked up time zone
 export const date = new Date();
 export const testDate = moment(date).tz(timeZone).startOf("hour").toDate();
 export const startDate = moment(testDate).add(0, "h").toDate();
